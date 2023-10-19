@@ -16,7 +16,7 @@ async function main() {
   app.use(express.json());
   app.use("/api", routes);
   app.get('/', (req, res) => {
-    res.status(200).send('Welcome to the home page!');
+    res.status(200).send('Welcome Nihal jadhav!');
 });
 
   app.listen(port, () => {
