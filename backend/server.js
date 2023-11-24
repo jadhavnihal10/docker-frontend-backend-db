@@ -4,10 +4,13 @@ const mongoose = require("mongoose");
 const port = 3001;
 const routes = require("./routes");
 
+const username = "root";
+const password = "nihal";
+
 main().catch((err) => console.log(err));
 
 async function main() {
-  await mongoose.connect("mongodb://10.100.103.227:27017/todos", {
+  await mongoose.connect("mongodb://10.100.144.58:27017/todos", {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   });
